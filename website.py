@@ -16,4 +16,6 @@ class MyWebBrowser(QMainWindow):
         self.horizontal = QHBoxLayout()
 
         self.url_bar = QTextEdit()
-        self.url_bar.set
+        self.url_bar.setMaximunHeight(30)
+
+        self.go_btn = 
