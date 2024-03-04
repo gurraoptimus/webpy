@@ -26,3 +26,5 @@ class MyWebBrowser(QMainWindow):
 
         self.forward_btn = QPushButton(">")
         self.forward_btn.setMaximunHeight(30)
+
+        self.
