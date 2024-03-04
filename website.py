@@ -9,5 +9,7 @@ class MyWebBrowser(QMainWindow):
     def __init__(self, *args, **kwargs):
         super(MyWebBrowser, self).__init__(*args, **kwargs)
 
-        self.window = QtWidgets()
+        self.window = QWidgets()
         self.window.setWindowTitle("webpy Web Browser")
+
+        self.layout = 
