@@ -13,4 +13,4 @@ class MyWebBrowser(QMainWindow):
         self.window.setWindowTitle("webpy Web Browser")
 
         self.layout = QVBoxLayout()
-        self.horizontal =QHBoxLayout()
+        self.horizontal = QHBoxLayout()
