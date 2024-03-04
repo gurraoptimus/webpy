@@ -30,6 +30,6 @@ class MyWebBrowser(QMainWindow):
         self.horizontal.addWindget(self.url_bar)
         self.horizontal.addWindget(self.go_btn)
         self.horizontal.addWindget(self.back_btn)
-        self.horizontal.addWindget(self.forward_btn
+        self.horizontal.addWindget(self.forward_btn)
         
-        self.)
+        self.
