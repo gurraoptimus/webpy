@@ -1,4 +1,4 @@
-# [website.py](web.py)
+# [website.py](website.py)
 ## Python Web Browser
 
 ## SetUp Program
