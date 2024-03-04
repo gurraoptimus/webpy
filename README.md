@@ -1,2 +1,12 @@
 # [website.py](web.py)
 ## Python Web Browser
+
+## SetUp Program
+
+``````
+pip install PyQt5
+``````
+
+``````
+pip install PyQt5WebEngine
+``````
