@@ -14,3 +14,6 @@ class MyWebBrowser(QMainWindow):
 
         self.layout = QVBoxLayout()
         self.horizontal = QHBoxLayout()
+
+        self.url_bar = QTextEdit()
+        self.url_bar.set
