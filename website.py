@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
-from PyQt5.Qtcore import *
+from PyQt5.QtCore import *
 from PyQt5.QtWebEngine import *
 
 
@@ -37,7 +37,7 @@ class MyWebBrowser(QMainWindow):
         self.layout.addLayout(self.horizontal)
         self.addWindget(self.browser)
 
-        self.browser.setUrl(QUrl("#"))
+        self.browser.setUrl(QUrl(""))
 
         self.window.setLayout(self.layout)
         self.window.show()
