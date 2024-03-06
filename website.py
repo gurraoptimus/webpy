@@ -1,12 +1,13 @@
 from PyQt5.QtWidgets import *
 # from PyQt5.QtGui import *
-from PyQt5.QtCore import *
+# from PyQt5.QtCore import *
 from PyQt5.QtWebEngine import *
 
 
 class MyWebBrowser():
    
     def __init__(self):
+        app = QApplication([])
         
         self.window = QWidget()
         self.window.setWindowTitle("webpy Web Browser")
@@ -45,12 +46,12 @@ class MyWebBrowser():
         self.window.setLayout(self.layout)
         self.window.show()
 
+    app.exec_()
+
     def navigate(self, url):
         if not url.startswith("http"):
             url = "http://" + url
             self.url_bar.setText(url)
         self.browser.setUrl(QUrl(url))
 
-app = QApplication([])
 window = MyWebBrowser()
-app.exec_()
