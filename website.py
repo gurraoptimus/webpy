@@ -38,7 +38,7 @@ class MyWebBrowser():
         self.forward_btn.clicked.connect(self.browser.forward)
 
         self.layout.addLayout(self.horizontal)
-        self.addWidget(self.browser)
+        self.layout.addWidget(self.browser)
 
         self.browser.setUrl(QUrl("http://google.com/"))
 
