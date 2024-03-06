@@ -1,14 +1,13 @@
 from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
+# from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWebEngine import *
 
 
 class MyWebBrowser(QMainWindow):
    
-    def __init__(self, *args, **kwargs):
-        super(MyWebBrowser, self).__init__(*args, **kwargs)
-
+    def __init__(self):
+        
         self.window = QWidget()
         self.window.setWindowTitle("webpy Web Browser")
 
@@ -34,13 +33,23 @@ class MyWebBrowser(QMainWindow):
         
         self.browser = QtWebEngineView()
 
-        self.layout.addLayout(self.horizontal)
-        self.addWindget(self.browser)
+        self.go_btn.clicked.connect(lambda: self.navigate(self.url_bar.toPlainText()))
+        self.back_btn.clicked.connect(self.browser.back)
+        self.forward_btn.clicked.connect(self.browser.forward)
 
-        self.browser.setUrl(QUrl(""))
+        self.layout.addLayout(self.horizontal)
+        self.addWidget(self.browser)
+
+        self.browser.setUrl(QUrl("https://google.com/"))
 
         self.window.setLayout(self.layout)
         self.window.show()
+
+    def navigate(self, url):
+        if not url.startswith("http"):
+            url = "http://" + url
+            self.url_bar.setText(url)
+        self.browser.setUrl(QUrl(url))
 
 app = QApplication([])
 window = MyWebBrowser()
