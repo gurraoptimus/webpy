@@ -4,7 +4,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtWebEngine import *
 
 
-class MyWebBrowser(QMainWindow):
+class MyWebBrowser():
    
     def __init__(self):
         
