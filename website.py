@@ -31,7 +31,7 @@ class MyWebBrowser():
         self.horizontal.addWidget(self.back_btn)
         self.horizontal.addWidget(self.forward_btn)
         
-        self.browser = QtWebEngineView()
+        self.browser = QWebEngineView()
 
         self.go_btn.clicked.connect(lambda: self.navigate(self.url_bar.toPlainText()))
         self.back_btn.clicked.connect(self.browser.back)
