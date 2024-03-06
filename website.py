@@ -42,6 +42,6 @@ class MyWebBrowser(QMainWindow):
         self.window.setLayout(self.layout)
         self.window.show()
 
-app = QApplication()
+app = QApplication([])
 window = MyWebBrowser()
 app.exec_()
