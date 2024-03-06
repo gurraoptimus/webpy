@@ -16,13 +16,13 @@ class MyWebBrowser(QMainWindow):
         self.horizontal = QHBoxLayout()
 
         self.url_bar = QTextEdit()
-        self.url_bar.setMaximunHeight(30)
+        self.url_bar.setMaximumHeight(30)
 
         self.go_btn = QPushButton("Go")
-        self.go_btn.setMaximunHeight(30)
+        self.go_btn.setMaximumHeight(30)
 
         self.back_btn = QPushButton("<")
-        self.back_btn.setMaximunHeight(30)
+        self.back_btn.setMaximumHeight(30)
 
         self.forward_btn = QPushButton(">")
         self.forward_btn.setMaximumHeight(30)
