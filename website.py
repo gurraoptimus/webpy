@@ -40,7 +40,7 @@ class MyWebBrowser():
         self.layout.addLayout(self.horizontal)
         self.addWidget(self.browser)
 
-        self.browser.setUrl(QUrl("https://google.com/"))
+        self.browser.setUrl(QUrl("http://google.com/"))
 
         self.window.setLayout(self.layout)
         self.window.show()
