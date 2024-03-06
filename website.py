@@ -32,4 +32,9 @@ class MyWebBrowser(QMainWindow):
         self.horizontal.addWindget(self.back_btn)
         self.horizontal.addWindget(self.forward_btn)
         
-        self.
+        self.browser = QtWebEngineView()
+
+        self.layout.addLayout(self.horizontal)
+        self.addWindget(self.browser)
+
+        self.browser.setUrl(QUrl("https://gurraoptimus.se/"))
