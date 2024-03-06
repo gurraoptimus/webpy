@@ -46,7 +46,7 @@ class MyWebBrowser():
         self.window.setLayout(self.layout)
         self.window.show()
 
-    app.exec_()
+        app.exec_()
 
     def navigate(self, url):
         if not url.startswith("http"):
