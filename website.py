@@ -37,4 +37,11 @@ class MyWebBrowser(QMainWindow):
         self.layout.addLayout(self.horizontal)
         self.addWindget(self.browser)
 
-        self.browser.setUrl(QUrl("https://gurraoptimus.se/"))
+        self.browser.setUrl(QUrl("#"))
+
+        self.window.setLayout(self.layout)
+        self.window.show()
+
+app = QApplication()
+window = MyWebBrowser()
+app.exec_()
