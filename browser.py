@@ -48,7 +48,7 @@ class MyWebBrowser():
 
     def navigate(self, url):
         if not url.startswith("http"):
-            url = "http://" + url
+            url = "http://" "." + url
             self.url_bar.setText(url)
         self.browser.setUrl(QUrl(url))
 
