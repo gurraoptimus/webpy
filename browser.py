@@ -9,7 +9,7 @@ class MyWebBrowser():
     def __init__(self):
         
         self.window = QWidget()
-        self.window.setWindowTitle("webpy Web Browser")
+        self.window.setWindowTitle("WebPy Browser")
 
         self.layout = QVBoxLayout()
         self.horizontal = QHBoxLayout()
