@@ -40,7 +40,7 @@ class MyWebBrowser():
         self.layout.addLayout(self.horizontal)
         self.layout.addWidget(self.browser)
 
-        self.browser.setUrl(QUrl("http://google.com/"))
+        self.browser.setUrl(QUrl("https://github.com/gurraoptimus/webpy"))
 
         self.window.setLayout(self.layout)
         self.window.show()
@@ -48,7 +48,7 @@ class MyWebBrowser():
 
     def navigate(self, url):
         if not url.startswith("http"):
-            url = "http://" "." + url
+            url = "https://google" ".com" + url
             self.url_bar.setText(url)
         self.browser.setUrl(QUrl(url))
 
